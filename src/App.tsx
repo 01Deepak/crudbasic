@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './Components/Pages/ErrorPage';
 import Dummy1 from './Components/Pages/Dummy1';
 import Dummy2 from './Components/Pages/Dummy2';
+import BasicDataTableExample from './Components/BasicDataTable/BasicDataTableExample';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Dummy2/>,
+      },
+      {
+        path: "datatablebasicexample",
+        element: <BasicDataTableExample/>,
       },
       {
         path: "dummy1",

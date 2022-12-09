@@ -7,6 +7,9 @@ const RouteNavigation = () => {
     <>
        <nav>
          <ul>
+         <li>
+              <Link to={`datatablebasicexample`}>DataTable Basic Example</Link>
+            </li>
             <li>
               <Link to={`dummy1`}>dummy1</Link>
             </li>

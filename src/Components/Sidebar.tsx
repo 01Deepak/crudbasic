@@ -12,8 +12,8 @@ import RouteNavigation from './Pages/RouteNavigation';
 const drawerWidth = 240;
 
 const Sidebar = () => {
-  
- 
+
+
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -27,7 +27,7 @@ const Sidebar = () => {
           </Typography>
         </Toolbar>
       </AppBar>
-    
+
 
       <Drawer
         sx={{
@@ -39,20 +39,28 @@ const Sidebar = () => {
             // backgroundColor: '#828ae7',
             // color: '#585353',
           },
-         
+
         }}
         variant="permanent"
         anchor="left"
       >
         <h3>Brand Logo</h3>
-        <Divider/>
-       <RouteNavigation/>
+        <Divider />
+        <RouteNavigation />
       </Drawer>
-      
-      <div id="detail">
-        <Outlet />
-      </div>
-      
+
+      {/* <div id="detail"> */}
+        <Box
+          component="main"
+          sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+        >
+          <Toolbar />
+          <Typography paragraph>
+            <Outlet />
+          </Typography>
+        </Box>
+      {/* </div> */}
+
     </Box>
   );
 }

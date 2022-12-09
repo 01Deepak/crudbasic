@@ -3,16 +3,10 @@ import React from 'react'
 
 const Dummy2 = () => {
   return (
-    <Box
-    component="main"
-    sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
-  >
-    <Toolbar/>
-  <Typography paragraph>
-    <h3>dummy 2</h3>
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laudantium eveniet nobis iste iure deserunt quis velit neque deleniti vitae architecto commodi ducimus perferendis repellendus aliquam, beatae debitis saepe unde?
-    </Typography>
-    </Box>
+    <>
+  <h3>Dummy 2</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates cupiditate quae, iusto deserunt sequi voluptatum quis soluta animi quibusdam aperiam unde vel ea nam doloremque saepe pariatur amet! Pariatur officiis necessitatibus nemo quis incidunt accusantium blanditiis maiores quibusdam at.</p>
+    </>
   )
 }
 
