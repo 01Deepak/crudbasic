@@ -1,5 +1,6 @@
 import React from 'react'
 import DataTable from 'react-data-table-component'
+import DataTableBase from '../../Common/DataTableBase';
 import { columns, data } from './Data'
 
 const ExpandedComponent = ({ data }:any) => {
@@ -17,12 +18,10 @@ const BasicDataTableExample = () => {
   return (
     <>
      <h3>BasicDataTableExample</h3> 
-     <DataTable
+     <DataTableBase 
      columns={columns}
      data={data}
      selectableRows
-     expandableRows
-     expandableRowsComponent={ExpandedComponent}
      />
      </>
 
