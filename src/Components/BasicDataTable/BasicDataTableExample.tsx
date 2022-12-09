@@ -9,6 +9,7 @@ const BasicDataTableExample = () => {
      <DataTable
      columns={columns}
      data={data}
+     selectableRows
      />
      </>
 
